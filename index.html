@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Learning UTC2</title>
+        <link rel="icon" type="image/x-icon" href="./public/image/logo.png" />
+        <link rel="stylesheet" href="./public/css/style.css" />
+
+        <!-- Link fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body>
+        <!-- header section start -->
+        <header>
+            <a href="/" class="logo">
+                <img
+                    width="44"
+                    height="44"
+                    src="./public/image/logo.png"
+                    alt="logo"
+                />
+                <div class="logo-text">
+                    <p>Trường đại học giao thông vận tải</p>
+                    <p>Phân hiệu tại tp. hồ chí minh</p>
+                </div>
+            </a>
+
+            <nav class="navbar">
+                <a href="#courses" class="active">Khóa học</a>
+                <a href="#homework">Luyện tập</a>
+                <a href="#exam">Đề thi</a>
+                <a href="#mycourses">Khóa học của tôi</a>
+
+                <a href="#account" class="text-icon">Tài khoản</a>
+                <a href="#notify" class="text-icon">Thông báo</a>
+                <a href="#mycourses" class="text-icon">Câu hỏi thường gặp</a>
+            </nav>
+
+            <div class="icons">
+                <a href="#"
+                    ><i class="fa-regular fa-circle-question" id="help-icon"></i
+                ></a>
+                <a href="#"
+                    ><i class="fa-solid fa-bell" id="notify-icon"></i
+                ></a>
+                <a href="#"
+                    ><i class="fa-solid fa-circle-user" id="user-icon"></i
+                ></a>
+                <a href="#"
+                    ><i
+                        class="fa-solid fa-magnifying-glass"
+                        id="search-icon"
+                    ></i
+                ></a>
+                <a href="#"><i class="fa-solid fa-bars" id="menu-bars"></i></a>
+            </div>
+        </header>
+
+        <!-- header section end -->
+
+        <!-- search form -->
+        <form action="post" id="search-form">
+            <input
+                type="search"
+                name="search-box"
+                id="search-box"
+                autofocus
+                required
+            />
+            <label
+                for="search-box"
+                class="fa-solid fa-magnifying-glass"
+            ></label>
+            <i class="fa-solid fa-times" id="close-search"></i>
+        </form>
+
+        <main>
+            <!-- slider section -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./public/image/slide-4.webp" alt="" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="./public/image/slide-2.png" alt="" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="./public/image/slider-3.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="slider-btn">
+                    <button id="slider-prev-btn"><</button>
+                    <button id="slider-next-btn">></button>
+                </div>
+
+                <ul class="slider-dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- end slider section -->
+
+            <!-- courses section -->
+            <div class="courses-container">
+                <h1>Khóa học</h1>
+
+
+                <ul class="nav-courses">
+                    <li><a class="active" href="">Khóa học gợi ý</a></li>
+                    <li><a href="">Đang học (4)</a></li>
+                    <li><a href="">Đã hoàn thành (0)</a></li>
+                </ul>
+                <div class="courses-wrapper">
+                    <div class="course">
+                        <img src="./public/image/dstt.jpg" alt="">
+
+                        <div class="course-content">
+                            <h3 class="course-title">Đại số tuyến tính</h3>
+                            <p class="course-decs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quam excepturi modi voluptatibus earum quos ex, quo numquam, distinctio tempore optio repellat asperiores assumenda soluta deserunt iure! Expedita, perspiciatis sequi?</p>
+    
+                            <div class="course-footer">
+                                <div class="course-length">
+                                    <i class="fa-regular fa-clock"></i>
+                                    12:00:00
+                                </div>
+    
+                                <button class="eroll-btn">
+                                    Học ngay
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="course">
+                        <img src="./public/image/tienganh.jpg" alt="">
+
+                        <div class="course-content">
+                            <h3 class="course-title">Tiếng anh</h3>
+                            <p class="course-decs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quam excepturi modi voluptatibus earum quos ex, quo numquam, distinctio tempore optio repellat asperiores assumenda soluta deserunt iure! Expedita, perspiciatis sequi?</p>
+
+                            <div class="course-footer">
+                                <div class="course-length">
+                                    <i class="fa-regular fa-clock"></i>
+                                    24:00:00
+                                </div>
+
+                                <button class="eroll-btn">
+                                    Học ngay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <img src="./public/image/giaitich.jpg" alt="">
+
+                        <div class="course-content">
+                            <h3 class="course-title">Giải tích 1</h3>
+                            <p class="course-decs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quam excepturi modi voluptatibus earum quos ex, quo numquam, distinctio tempore optio repellat asperiores assumenda soluta deserunt iure! Expedita, perspiciatis sequi?</p>
+                                
+                            <div class="course-footer">
+                                <div class="course-length">
+                                    <i class="fa-regular fa-clock"></i>
+                                    16:00:00
+                                </div>
+                                
+                                <button class="eroll-btn">
+                                    Học ngay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <img src="./public/image/th.jpg" alt="">
+
+                        <div class="course-content">
+                            <h3 class="course-title">Triết học</h3>
+                            <p class="course-decs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quam excepturi modi voluptatibus earum quos ex, quo numquam, distinctio tempore optio repellat asperiores assumenda soluta deserunt iure! Expedita, perspiciatis sequi?fdd des</p>
+    
+                            <div class="course-footer">
+                                <div class="course-length">
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:00:00
+                                </div>
+    
+                                <button class="eroll-btn">
+                                    Học ngay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end courses section -->
+
+
+            <!-- Document section -->
+            <div class="document-container">
+                <h1>Tài liệu</h1>
+
+                <div class="document">
+                    <div class="document-title">Môn Giáo Dục Quốc Phòng Và An Ninh</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Quốc Phòng Và An Ninh 1</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Quốc Phòng Và An Ninh 2</div>
+                            <div class="document-sub-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?</div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Quốc Phòng Và An Ninh 3</div>
+                            <div class="document-sub-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?</div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Quốc Phòng Và An Ninh 4</div>
+                            <div class="document-sub-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="document">
+                    <div class="document-title">Môn Giáo Dục Thể Chất</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Thể Chất 1</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Thể Chất 2</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Thể Chất 3</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giáo Dục Thể Chất 4</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="document">
+                    <div class="document-title">Nhập Môn</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Nhập môn Ngành Khai Thác Vận Tải</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Nhập Môn Ngành Công Nghệ Thông Tin</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Nhập Môn Ngành Tài Chính - Ngân Hàng</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Nhập Môn Ngành Điện - Điện Tử</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="document">
+                    <div class="document-title">Môn Tiếng Anh</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Tiếng Anh A1</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Tiếng Anh A2</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Tiếng Anh B1</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Tiếng Anh Chuyên Ngành</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="document">
+                    <div class="document-title">Môn Toán cao cấp</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Giải tích 1</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Giải tích 2</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Đại số tuyến tính</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Xác xuất thống kê</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="document">
+                    <div class="document-title">Môn Công Nghệ Thông Tin</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Tin học đại cương</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Tin học ứng dụng</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Tin học văn phòng</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Toán - Tin</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="document">
+                    <div class="document-title">Môn Triết Học</div>
+                    <div class="document-content">
+                        <div class="document">
+                            <div class="document-title">Triết học Mác - Lênin</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Chủ nghĩa xã hội</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Kinh tế chính trị</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Lịch sử Đảng</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                        <div class="document">
+                            <div class="document-title">Tư tưởng Hồ Chí Minh</div>
+                            <div class="document-sub-content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem eveniet quod non sequi sit aspernatur asperiores nisi corporis deserunt iste libero veniam harum, obcaecati suscipit. Animi nam consectetur dolorem?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End document section -->
+
+
+            <!-- Bài viết -->
+            <!-- UTC2 tính điểm như thế nào, khi nào thi, cách học tập hiệu quả tại UTC2,
+            làm thế nào để đạt được học bổng, các cuộc thi học thuật tại UTC2 -->
+        </main>
+
+        <footer style="height: 1000px;">
+
+        </footer>
+
+        <script src="./public/js/main.js"></script>
+    </body>
+</html>
