@@ -81,3 +81,9 @@ for (let i = 0; i < accordions.length; i++) {
         accordions[i].classList.toggle('active')
     })
 }
+
+const notifyIcon = document.querySelector('.notify-wrapper')
+
+notifyIcon.addEventListener('click', () => {
+    notifyIcon.classList.toggle('active')
+})

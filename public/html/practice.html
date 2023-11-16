@@ -27,8 +27,8 @@
         <nav class="navbar">
             <a href="./index.html">Khóa học</a>
             <a href="./practice.html" class="active">Luyện tập</a>
-            <a href="#exam">Đề thi</a>
-            <a href="#mycourses">Khóa học của tôi</a>
+            <a href="./exam.html">Đề thi</a>
+            <a href="./my_course.html">Khóa học của tôi</a>
 
             <a href="#account" class="text-icon">Tài khoản</a>
             <a href="#notify" class="text-icon">Thông báo</a>
@@ -36,9 +36,14 @@
         </nav>
 
         <div class="icons">
-            <a href="#"><i class="fa-regular fa-circle-question" id="help-icon"></i></a>
-            <a href="#"><i class="fa-solid fa-bell" id="notify-icon"></i></a>
-            <a href="#"><i class="fa-solid fa-circle-user" id="user-icon"></i></a>
+            <a href="./q-a.html"><i class="fa-regular fa-circle-question" id="help-icon"></i></a>
+            <a class="notify-wrapper" style="position: relative;" href="#">
+                <i class="fa-solid fa-bell" id="notify-icon"></i>
+                <div class="notify">
+                    <p>Hiện tại bạn chưa có thông báo</p>
+                </div>
+            </a>
+            <a href="./signup.html"><i class="fa-solid fa-circle-user" id="user-icon"></i></a>
             <a href="#"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></a>
             <a href="#"><i class="fa-solid fa-bars" id="menu-bars"></i></a>
         </div>
@@ -65,13 +70,62 @@
                 </a>
             </div>
             <div class="subject">
-                <a href="">
+                <a href="./practice_philosophy.html">
                     <h2>Luyện tập môn Triết học</h2>
                     <img src="../image/th.jpg" alt="tieng anh">
                 </a>
             </div>
         </div>
     </main>
+
+    <footer>
+        <a href="/" class="logo">
+            <img
+                width="44"
+                height="44"
+                src="../image/logo.png"
+                alt="logo"
+            />
+            <div class="logo-text">
+                <p>Trường đại học giao thông vận tải</p>
+                <p>Phân hiệu tại tp. hồ chí minh</p>
+            </div>
+        </a>
+
+        <p class="footer-ad">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, aspernatur odit quaerat ratione repellendus iusto beatae, cum distinctio autem molestias dolor quibusdam! Ullam eaque cumque quo recusandae sint et sit
+        </p>
+
+        <div class="footer-social">
+            <a href=""><i style="color: #37599e;" class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i style="color: #b21010;" class="fa-brands fa-square-youtube"></i></a>
+            <a href=""><i style="color: #00a2f9;" class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i style="color: #bf1b8f;" class="fa-brands fa-square-instagram"></i></a>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-column-link">
+                <h2>LIÊN KẾT</h2>
+                <a href="">Học tập</a>
+                <a href="">Luyện tập</a>
+                <a href="">Đề thi</a>
+            </div>
+
+            <div class="footer-column-infor">
+                <h2>THÔNG TIN</h2>
+                <a href="">Bài viết</a>
+                <a href="">Về chúng tôi</a>
+                <a href="">Điều khoản sử dụng</a>
+            </div>
+
+            <div class="footer-column-infor">
+                <h2>TRỢ GIÚP</h2>
+                <a href="">Hỗ trợ</a>
+                <a href="">Thảo luận</a>
+                <a href="">Liên hệ với chúng tôi</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" type="image/x-icon" href="../image/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Link fontawesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <a href="/public/html/index.html" class="logo">
+            <img
+                width="44"
+                height="44"
+                src="../image/logo.png"
+                alt="logo"
+            />
+            <div class="logo-text">
+                <p>Trường đại học giao thông vận tải</p>
+                <p>Phân hiệu tại tp. hồ chí minh</p>
+            </div>
+        </a>
+
+        <nav class="navbar">
+            <a href="./index.html">Khóa học</a>
+            <a href="./practice.html">Luyện tập</a>
+            <a href="./exam.html">Đề thi</a>
+            <a href="./my_course.html">Khóa học của tôi</a>
+
+            <a href="#account" class="text-icon">Tài khoản</a>
+            <a href="#notify" class="text-icon">Thông báo</a>
+            <a href="./q-a.html" class="text-icon">Câu hỏi thường gặp</a>
+        </nav>
+
+        
+        
+        <div class="icons">
+            <a href="./q-a.html"
+                ><i class="fa-regular fa-circle-question" id="help-icon"></i
+            ></a>
+            <a class="notify-wrapper" style="position: relative;" href="#">
+                <i class="fa-solid fa-bell" id="notify-icon"></i>
+                <div class="notify">
+                    <p>Hiện tại bạn chưa có thông báo</p>
+                </div>
+            </a>
+            
+            <a href="./account.html"
+                ><i style="color: #facb01;" class="fa-solid fa-circle-user" id="user-icon"></i
+            ></a>
+            <a href="#"
+                ><i
+                    class="fa-solid fa-magnifying-glass"
+                    id="search-icon"
+                ></i
+            ></a>
+            <a href="#"><i class="fa-solid fa-bars" id="menu-bars"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Đăng nhập tài khoản</h1>
+        <form action="get">
+            <table>
+
+                <tr>
+                    <td>Tên đăng nhập: </td>
+                    <td>
+                        <input type="text" id="TenDangNhap" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mật khẩu: </td>
+                    <td>
+                        <input type="password" id="PassWord" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <!-- <button id="DangKi" onclick="CheckThongTin()">Đăng ký</button> -->
+                        <input id="submit-btn" type="button" value="Đăng nhập" onclick="CheckDangNhap()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <script src="../js/login.js">
+
+    </script>
+</body>
+
+</html>

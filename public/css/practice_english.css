@@ -3,12 +3,13 @@
     padding: 20px;
 }
 
-select {
+.select1 {
     width: 145px;
     height: 27px;
-    
+    padding: 3px;
 }
 
+#check-ex2,
 #check-ex1 {
     padding: 10px 15px;
     background-color: #000;
@@ -20,7 +21,42 @@ select {
     font-size: 18px;
 }
 
+#check-ex2:hover,
 #check-ex1:hover {
     background-color: #e74c3c;
 }
 
+.question2 select.correct,
+.question select.correct {
+    background-color: #9dd8bb;;
+    color: #255c41;;
+    outline: none;
+    border: none;
+}
+
+.question2 select.wrong,
+.question select.wrong {
+    background-color: #f7d0d0;
+    color: #b71c1c;
+    text-decoration: line-through;
+    outline: none;
+    border: none;
+}
+
+#result2,
+#result1 {
+    display: inline;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.select2 {
+    text-overflow: ellipsis;
+    padding: 5px;
+    max-width: calc(100vw - 36px);
+}
+
+.question2 {
+    margin-bottom: 30px;
+}

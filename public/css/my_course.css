@@ -1,0 +1,33 @@
+main {
+    margin: 10px;
+    position: relative;
+    top: 10rem;
+}
+
+.nav-courses li a {
+    font-size: 14px;
+}
+
+.nav-courses li {
+    margin-left: 2rem;
+}
+
+.container-filter {
+    margin-top: 30px;
+    display: flex;
+    font-size: 14px;
+}
+
+.filter-by {
+    margin-left: 20px;
+}
+
+select {
+    border: 1px solid #000;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 200px;
+}

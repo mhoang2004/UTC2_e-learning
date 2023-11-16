@@ -29,6 +29,10 @@
     height: 20rem;
 }
 
+footer {
+    margin-top: 300px;
+}
+
 @media (max-width: 991px) {
     html {
         font-size: 55%;

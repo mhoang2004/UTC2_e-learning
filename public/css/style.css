@@ -105,6 +105,35 @@ header .icons #menu-bars {
     display: none;
 }
 
+.notify {
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    border-radius: 3px;
+    color: #000;
+    transition: .5s;
+}
+
+.notify:hover {
+    display: block;
+}
+
+#notify-icon:hover + .notify {
+    display: block;
+}
+
+.notify-wrapper.active i {
+    color: #facb01;
+}
+
+.notify-wrapper.active .notify {
+    display: block;
+}
+
 #search-form {
     position: fixed;
     top: -100%;
@@ -407,14 +436,12 @@ header .icons #menu-bars {
 
 .document-sub-content {
     margin-left: 3rem;
-    /* padding: 1rem; */
     font-size: 1.6rem;
     background-color: #bedfe8;
     position: relative;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
-
 }
 
 .document-content {

@@ -20,7 +20,7 @@
     <body>
         <!-- header section start -->
         <header>
-            <a href="/" class="logo">
+            <a href="/public/html/index.html" class="logo">
                 <img
                     width="44"
                     height="44"
@@ -36,22 +36,28 @@
             <nav class="navbar">
                 <a href="./index.html" class="active">Khóa học</a>
                 <a href="./practice.html">Luyện tập</a>
-                <a href="#exam">Đề thi</a>
-                <a href="#mycourses">Khóa học của tôi</a>
+                <a href="./exam.html">Đề thi</a>
+                <a href="./my_course.html">Khóa học của tôi</a>
 
-                <a href="#account" class="text-icon">Tài khoản</a>
+                <a href="./signup.html" class="text-icon">Tài khoản</a>
                 <a href="#notify" class="text-icon">Thông báo</a>
-                <a href="#mycourses" class="text-icon">Câu hỏi thường gặp</a>
+                <a href="./q-a.html" class="text-icon">Câu hỏi thường gặp</a>
             </nav>
 
+            
+            
             <div class="icons">
-                <a href="#"
+                <a href="./q-a.html"
                     ><i class="fa-regular fa-circle-question" id="help-icon"></i
                 ></a>
-                <a href="#"
-                    ><i class="fa-solid fa-bell" id="notify-icon"></i
-                ></a>
-                <a href="#"
+                <a class="notify-wrapper" style="position: relative;" href="#">
+                    <i class="fa-solid fa-bell" id="notify-icon"></i>
+                    <div class="notify">
+                        <p>Hiện tại bạn chưa có thông báo</p>
+                    </div>
+                </a>
+                
+                <a href="./signup.html"
                     ><i class="fa-solid fa-circle-user" id="user-icon"></i
                 ></a>
                 <a href="#"
@@ -115,7 +121,6 @@
             <!-- courses section -->
             <div class="courses-container">
                 <h1>Khóa học</h1>
-
 
                 <ul class="nav-courses">
                     <li><a class="active" href="">Khóa học gợi ý</a></li>
