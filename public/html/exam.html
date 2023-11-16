@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đề thi UTC2</title>
     <link rel="icon" type="image/x-icon" href="../image/logo.png" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/exam.css">
-        <!-- Link fontawesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/exam.css">
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
-        <a href="/" class="logo">
-            <img width="44" height="44" src="/public/image/logo.png" alt="logo" />
+        <a href="../html/index.html" class="logo">
+            <img width="44" height="44" src="../image/logo.png" alt="logo" />
             <div class="logo-text">
                 <p>Trường đại học giao thông vận tải</p>
                 <p>Phân hiệu tại tp. hồ chí minh</p>
@@ -129,12 +127,7 @@
 
     <footer>
         <a href="/" class="logo">
-            <img
-                width="44"
-                height="44"
-                src="../image/logo.png"
-                alt="logo"
-            />
+            <img width="44" height="44" src="../image/logo.png" alt="logo" />
             <div class="logo-text">
                 <p>Trường đại học giao thông vận tải</p>
                 <p>Phân hiệu tại tp. hồ chí minh</p>
@@ -142,7 +135,8 @@
         </a>
 
         <p class="footer-ad">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, aspernatur odit quaerat ratione repellendus iusto beatae, cum distinctio autem molestias dolor quibusdam! Ullam eaque cumque quo recusandae sint et sit
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, aspernatur odit quaerat ratione repellendus
+            iusto beatae, cum distinctio autem molestias dolor quibusdam! Ullam eaque cumque quo recusandae sint et sit
         </p>
 
         <div class="footer-social">
@@ -178,7 +172,7 @@
 
     <script>
         const blocks = document.querySelectorAll(".block")
-        const url ="https://1.bp.blogspot.com/-vpdID-IYNEY/Xk9b75A0ukI/AAAAAAAAAfE/KNLqU3KccZk6J75UvPauSX_aaDQHgj26gCLcBGAsYHQ/s1600/de-thi-chinh-thuc-2019-mon-toan-mathvn.com-20.png"
+        const url = "https://1.bp.blogspot.com/-vpdID-IYNEY/Xk9b75A0ukI/AAAAAAAAAfE/KNLqU3KccZk6J75UvPauSX_aaDQHgj26gCLcBGAsYHQ/s1600/de-thi-chinh-thuc-2019-mon-toan-mathvn.com-20.png"
         blocks.forEach(block => {
             block.addEventListener('click', () => {
                 fetch(url).then(res => res.blob()).then(file => {
@@ -195,4 +189,5 @@
         })
     </script>
 </body>
+
 </html>
