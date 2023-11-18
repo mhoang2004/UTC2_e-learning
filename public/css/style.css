@@ -324,7 +324,7 @@ header .icons #menu-bars {
     border-top-right-radius: .3rem;
     width: 100%;
     object-fit: cover;
-    height: 60%;
+    height: 180px;
 }
 
 .course-content {
@@ -603,6 +603,11 @@ footer {
     .course:last-child {
         padding-right: 3rem;
     }
+
+    .course img {
+        height: 60%;
+    }
+
     
 }
 
@@ -622,6 +627,11 @@ footer {
         height: fit-content;
         margin-bottom: 2rem;
     }
+
+    .course img {
+        height: 60%;
+    }
+
     .course:last-child {
         padding-right: 0;
     }

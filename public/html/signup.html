@@ -10,24 +10,29 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Link fontawesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<style>
+    table,
+    td,
+    th {
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    main {
+        background: url('../image/lake.jpg');
+        height: 100%;
+    }
+</style>
 
 <body>
     <header>
         <a href="/public/html/index.html" class="logo">
-            <img
-                width="44"
-                height="44"
-                src="../image/logo.png"
-                alt="logo"
-            />
+            <img width="44" height="44" src="../image/logo.png" alt="logo" />
             <div class="logo-text">
                 <p>Trường đại học giao thông vận tải</p>
                 <p>Phân hiệu tại tp. hồ chí minh</p>
@@ -45,34 +50,25 @@
             <a href="./q-a.html" class="text-icon">Câu hỏi thường gặp</a>
         </nav>
 
-        
-        
+
+
         <div class="icons">
-            <a href="./q-a.html"
-                ><i class="fa-regular fa-circle-question" id="help-icon"></i
-            ></a>
+            <a href="./q-a.html"><i class="fa-regular fa-circle-question" id="help-icon"></i></a>
             <a class="notify-wrapper" style="position: relative;" href="#">
                 <i class="fa-solid fa-bell" id="notify-icon"></i>
                 <div class="notify">
                     <p>Hiện tại bạn chưa có thông báo</p>
                 </div>
             </a>
-            
-            <a href="./account.html"
-                ><i style="color: #facb01;" class="fa-solid fa-circle-user" id="user-icon"></i
-            ></a>
-            <a href="#"
-                ><i
-                    class="fa-solid fa-magnifying-glass"
-                    id="search-icon"
-                ></i
-            ></a>
+
+            <a href="./account.html"><i style="color: #facb01;" class="fa-solid fa-circle-user" id="user-icon"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></a>
             <a href="#"><i class="fa-solid fa-bars" id="menu-bars"></i></a>
         </div>
     </header>
 
     <main>
-        <h1>Đăng kí tài khoản</h1>
+        <h1 style="">Đăng kí tài khoản</h1>
         <form action="get">
             <table>
                 <tr>
@@ -103,6 +99,7 @@
                     <td>Mật khẩu: </td>
                     <td>
                         <input type="password" id="PassWord" required>
+                        <input type="button" value="show" id="showPassWord">
                     </td>
                 </tr>
                 <tr>
@@ -114,7 +111,9 @@
                 <tr>
                     <td>Giới tính: </td>
                     <td>
-                        <input type="radio" name="gioitinh" id="GioiTinh1" required> <label for="GioiTinh">Nam</label>
+                        <input style="margin-right: 6px;" type="radio" name="gioitinh" id="GioiTinh1" required> <label
+                            for="GioiTinh">Nam</label>
+
                         <input type="radio" name="gioitinh" id="GioiTinh2" required> <label for="GioiTinh">Nữ</label>
                     </td>
 

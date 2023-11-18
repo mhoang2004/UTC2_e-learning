@@ -60,3 +60,20 @@
 .question2 {
     margin-bottom: 30px;
 }
+
+
+main {
+    position: relative;
+    top: 8rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.question {
+    margin: 2rem;
+}
+
+strong {
+    margin: 1rem 0;
+    display: block;
+}
