@@ -314,6 +314,8 @@ header .icons #menu-bars {
     max-width: 25%;
     flex: 0 0 25%;
     padding-right: 3rem;
+    display: block;
+    color: #000;
 }
 
 .course img {
